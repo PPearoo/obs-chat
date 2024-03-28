@@ -1,0 +1,36 @@
+/* Note that because of the custom variables with SLOBS, if you put this code in an actual IDE, it will give errors because of the {text_color} and {font_size} variables. */
+
+#log > div {
+  animation: fadeOut 1s ease 99999999s forwards;
+  -webkit-animation: fadeOut 1s ease 99999999s forwards;
+  word-wrap: break-word;
+}
+
+div {
+  display: block;
+}
+
+#log {
+  font-family: "Ramabhadra", sans-serif;
+  font-weight: 700;
+  color: {text_color};
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 10px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  text-shadow: 3px 3px 3px #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.badges img {
+  width: 1rem;
+  height: auto;
+}
+
+body {
+  background: #ffffff;
+  color: #fafafa;
+  font-size: {font_size};
+}
